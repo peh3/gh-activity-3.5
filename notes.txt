@@ -1,0 +1,7 @@
+aws ssm put-parameter --name "/tk/config" --type "String" --value "MySSMConfig" --overwrite
+
+aws secretsmanager create-secret --name "tk/db_password" --secret-string "MySecretPassword123!"
+
+arn:aws:ssm:us-east-1:255945442255:parameter/tk/config
+
+arn:aws:secretsmanager:us-east-1:255945442255:secret:tk/db_password-DkhdK9
